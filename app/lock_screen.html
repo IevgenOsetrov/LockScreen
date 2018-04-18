@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+    function getValue(){
+       var val= document.form.pass.value;
+       var pass = document.form.password.value;
+       Android.receiveValue(val, pass);
+    }
+    </script>
+    <title></title>
+</head>
+<body>
+<div style="margin-top: 100px">
+    <form name="form" style="width: 300px; margin: 0 auto;">
+        <input type="hidden" id="myPass" name="password" value="11">
+        Password: <input type="text" name="pass" value=""><br>
+        <button type="button" onclick="getValue();">Submit</button>
+    </form>
+</div>
+</body>
+</html>

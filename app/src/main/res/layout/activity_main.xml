@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBDBDB"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="We should block phone every"
+            android:textColor="@android:color/black" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hours" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Minutes" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seconds" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/hours_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/minutes_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/seconds_spinner"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Change password"
+        android:textColor="@android:color/black" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/old_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter old password"
+        android:inputType="textPassword"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/new_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new password"
+        android:inputType="textPassword" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/new_pass_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repeat new password"
+        android:inputType="textPassword" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/save_changes_btn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorAccent"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="Save changes"
+            android:textColor="@android:color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/close_btn"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/darker_gray"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="Close" />
+    </RelativeLayout>
+</LinearLayout>
